@@ -6,7 +6,7 @@ function Dashboard() {
   const [alerts, setAlerts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/alerts")
+    axios.get("http://localhost:5000/alerts")
       .then((res) => {
         setAlerts(res.data);
       });
